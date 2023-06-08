@@ -38,7 +38,7 @@
 
   @include mix.respond(phone) {
     grid-template-columns: 1fr;
-    padding: 0 4rem;
+    padding: 0 12rem;
     gap: 6rem;
   }
 }

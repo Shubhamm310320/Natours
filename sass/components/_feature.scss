@@ -15,6 +15,10 @@
     padding: 4rem 2rem;
   }
 
+  @include mix.respond(tab-port) {
+    font-size: 1.8rem;
+  }
+
   &__icon {
     font-size: 6rem;
     margin-bottom: 0.5rem;

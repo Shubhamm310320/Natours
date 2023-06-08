@@ -48,6 +48,11 @@
     @include mix.respond(tab-land--sm) {
       align-items: center;
     }
+
+    @include mix.respond(phone) {
+      padding: 0 3.2rem;
+      align-items: flex-start;
+    }
   }
 
   &__img-box {

@@ -155,12 +155,12 @@ body {
 }
 @media only screen and (max-width: 100em) {
   .heading-secondary {
-    font-size: 3rem;
+    font-size: 3.2rem;
   }
 }
 @media only screen and (max-width: 37.5em) {
   .heading-secondary {
-    font-size: 2.1rem;
+    font-size: 2.2rem;
   }
 }
 .heading-secondary:hover {
@@ -175,7 +175,7 @@ body {
 }
 @media only screen and (max-width: 37.5em) {
   .heading-tertiary {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 }
 
@@ -184,7 +184,7 @@ body {
 }
 @media only screen and (max-width: 37.5em) {
   .paragraph {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
 }
 .paragraph:not(:last-child) {
@@ -515,6 +515,12 @@ body {
     align-items: center;
   }
 }
+@media only screen and (max-width: 37.5em) {
+  .about__text-box {
+    padding: 0 3.2rem;
+    align-items: flex-start;
+  }
+}
 .about__img-box {
   position: relative;
 }
@@ -553,7 +559,7 @@ body {
 @media only screen and (max-width: 37.5em) {
   .features {
     grid-template-columns: 1fr;
-    padding: 0 4rem;
+    padding: 0 12rem;
     gap: 6rem;
   }
 }
@@ -757,6 +763,11 @@ body {
     padding: 4rem 2rem;
   }
 }
+@media only screen and (max-width: 56.25em) {
+  .feature-box {
+    font-size: 1.8rem;
+  }
+}
 .feature-box__icon {
   font-size: 6rem;
   margin-bottom: 0.5rem;
@@ -950,7 +961,13 @@ body {
     transform: rotateY(0);
   }
   .card__details {
-    padding: 1rem 3rem;
+    padding: 4rem 1rem;
+  }
+  .card__details ul {
+    width: 90%;
+  }
+  .card__details ul li {
+    font-size: 2rem;
   }
   .card__cta {
     position: relative;
@@ -961,7 +978,7 @@ body {
     padding: 7rem 4rem 4rem 4rem;
   }
   .card__price-box {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
   }
   .card__price-value {
     font-size: 4rem;
@@ -970,6 +987,12 @@ body {
 @media only screen and (max-width: 56.25em) {
   .card {
     width: 90%;
+  }
+  .card__price-only {
+    font-size: 1.8rem;
+  }
+  .card__price-value {
+    font-size: 8rem;
   }
 }
 @media only screen and (max-width: 37.5em) {

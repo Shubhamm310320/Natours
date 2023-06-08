@@ -259,7 +259,15 @@
     }
 
     &__details {
-      padding: 1rem 3rem;
+      padding: 4rem 1rem;
+
+      ul {
+        width: 90%;
+
+        li {
+          font-size: 2rem;
+        }
+      }
     }
 
     // FRONT SIDE STYLING
@@ -273,7 +281,7 @@
     }
 
     &__price-box {
-      margin-bottom: 3rem;
+      margin-bottom: 1rem;
     }
 
     &__price-value {
@@ -283,6 +291,14 @@
 
   @include mix.respond(tab-port) {
     width: 90%;
+
+    &__price-only {
+      font-size: 1.8rem;
+    }
+
+    &__price-value {
+      font-size: 8rem;
+    }
   }
 
   @include mix.respond(phone) {
