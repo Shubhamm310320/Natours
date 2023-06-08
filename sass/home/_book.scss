@@ -12,6 +12,10 @@
   @include mix.respond(tab-land--lg) {
     padding: 15rem 8rem;
   }
+
+  @include mix.respond(phone) {
+    padding: 10rem 4rem;
+  }
 }
 
 .book {

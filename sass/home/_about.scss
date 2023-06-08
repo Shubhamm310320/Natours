@@ -11,6 +11,10 @@
     @include mix.respond(tab-port) {
       padding: 25rem 8rem 20rem 8rem;
     }
+
+    @include mix.respond(phone) {
+      padding: 24rem 4rem 6rem 4rem;
+    }
   }
 }
 

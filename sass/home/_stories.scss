@@ -1,6 +1,12 @@
+@use "../abstracts/mixins" as mix;
+
 .section-stories {
   position: relative;
   padding: 15rem 0;
+
+  @include mix.respond(phone) {
+    padding: 10rem 0;
+  }
 }
 
 .stories {
@@ -9,4 +15,8 @@
   display: flex;
   flex-direction: column;
   gap: 8rem;
+
+  @include mix.respond(phone) {
+    margin-top: -6rem;
+  }
 }

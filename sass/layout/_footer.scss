@@ -43,6 +43,10 @@
       display: flex;
       gap: 6.4rem;
     }
+
+    @include mix.respond(phone) {
+      gap: 2.4rem;
+    }
   }
 
   &__item {

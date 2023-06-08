@@ -238,4 +238,8 @@
   @include mix.respond(tab-port) {
     width: 90%;
   }
+
+  @include mix.respond(phone) {
+    width: 100%;
+  }
 }

@@ -36,6 +36,11 @@ html {
     font-size: 50%;
   }
 }
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 40%;
+  }
+}
 @media only screen and (min-width: 112.5em) {
   html {
     font-size: 75%;
@@ -117,12 +122,23 @@ body {
   animation-duration: 1s;
   animation-timing-function: ease-out;
 }
+@media only screen and (max-width: 37.5em) {
+  .heading-primary--main {
+    font-size: 4.2rem;
+  }
+}
 .heading-primary--sub {
   display: block;
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 1.75rem;
   animation: moveInRight 1s ease-out;
+}
+@media only screen and (max-width: 37.5em) {
+  .heading-primary--sub {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
 }
 
 .heading-secondary {
@@ -142,6 +158,11 @@ body {
     font-size: 3rem;
   }
 }
+@media only screen and (max-width: 37.5em) {
+  .heading-secondary {
+    font-size: 2.1rem;
+  }
+}
 .heading-secondary:hover {
   transform: skewY(2deg) skewX(15deg) scale(1.1);
   text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
@@ -152,9 +173,19 @@ body {
   font-weight: 700;
   text-transform: uppercase;
 }
+@media only screen and (max-width: 37.5em) {
+  .heading-tertiary {
+    font-size: 1.8rem;
+  }
+}
 
 .paragraph {
   font-size: 1.8rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .paragraph {
+    font-size: 1.6rem;
+  }
 }
 .paragraph:not(:last-child) {
   margin-bottom: 3rem;
@@ -402,6 +433,11 @@ body {
     gap: 6.4rem;
   }
 }
+@media only screen and (max-width: 37.5em) {
+  .footer__list {
+    gap: 2.4rem;
+  }
+}
 .footer__item {
   display: inline-block;
 }
@@ -437,6 +473,11 @@ body {
 @media only screen and (max-width: 56.25em) {
   .section__about {
     padding: 25rem 8rem 20rem 8rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .section__about {
+    padding: 24rem 4rem 6rem 4rem;
   }
 }
 
@@ -509,11 +550,23 @@ body {
     gap: 4rem;
   }
 }
+@media only screen and (max-width: 37.5em) {
+  .features {
+    grid-template-columns: 1fr;
+    padding: 0 4rem;
+    gap: 6rem;
+  }
+}
 
 .section__cards {
   margin-top: -15rem;
   padding: 25rem 8rem 12.5rem 8rem;
   background-color: #f7f7f7;
+}
+@media only screen and (max-width: 37.5em) {
+  .section__cards {
+    padding: 25rem 4rem 12.5rem 4rem;
+  }
 }
 
 .cards {
@@ -535,6 +588,11 @@ body {
   position: relative;
   padding: 15rem 0;
 }
+@media only screen and (max-width: 37.5em) {
+  .section-stories {
+    padding: 10rem 0;
+  }
+}
 
 .stories {
   max-width: 150rem;
@@ -542,6 +600,11 @@ body {
   display: flex;
   flex-direction: column;
   gap: 8rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .stories {
+    margin-top: -6rem;
+  }
 }
 
 .section-book {
@@ -551,6 +614,11 @@ body {
 @media only screen and (max-width: 100em) {
   .section-book {
     padding: 15rem 8rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .section-book {
+    padding: 10rem 4rem;
   }
 }
 
@@ -858,6 +926,11 @@ body {
 @media only screen and (max-width: 56.25em) {
   .card {
     width: 90%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .card {
+    width: 100%;
   }
 }
 

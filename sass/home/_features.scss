@@ -35,4 +35,10 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
   }
+
+  @include mix.respond(phone) {
+    grid-template-columns: 1fr;
+    padding: 0 4rem;
+    gap: 6rem;
+  }
 }
