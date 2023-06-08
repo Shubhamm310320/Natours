@@ -1,0 +1,101 @@
+@use "../abstracts/variables" as vars;
+
+.btn {
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 6rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    position: relative;
+    font-size: vars.$default-font-size;
+    font-weight: 600;
+    letter-spacing: 1.75px;
+
+    //Change for the <button> element
+    border: none;
+    cursor: pointer;
+    margin-top: 8rem;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(vars.$color-black, 0.2);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(vars.$color-black, 0.2);
+  }
+
+  &--white {
+    background-color: vars.$color-white;
+    color: vars.$color-grey-dark;
+
+    &::after {
+      background-color: vars.$color-white;
+    }
+  }
+
+  &--green {
+    background-color: vars.$color-primary;
+    color: vars.$color-white;
+
+    &::after {
+      background-color: vars.$color-primary;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+
+  &--animated {
+    animation: moveInBottom 0.5s ease-out 1s;
+    animation-fill-mode: backwards;
+  }
+}
+
+.btn-text {
+  &:link,
+  &:visited {
+    font-size: vars.$default-font-size;
+    color: vars.$color-primary;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid vars.$color-primary;
+    padding: 3px;
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    background-color: vars.$color-primary;
+    color: vars.$color-white;
+    box-shadow: 0 1rem 2rem rgba(vars.$color-black, 0.15);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    box-shadow: 0 0.5rem 1rem rgba(vars.$color-black, 0.15);
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,70 @@
+@use "../abstracts/variables" as vars;
+@use "../abstracts/mixins" as mix;
+
+.composition__photo {
+  height: 11vw;
+  position: absolute;
+  transition: all 0.4s cubic-bezier(0.35, -0.31, 0.51, 1.2);
+
+  @include mix.respond(desktop) {
+    height: 13vw;
+  }
+
+  @include mix.respond(tab-land--lg) {
+    height: 54%;
+  }
+
+  @include mix.respond(tab-land--sm) {
+    height: 20vw;
+  }
+
+  &--1 {
+    top: 0;
+    left: 4rem;
+
+    @include mix.respond(tab-land--sm) {
+      top: 2.5rem;
+      left: 8%;
+    }
+  }
+  &--2 {
+    top: 4rem;
+    left: 25rem;
+
+    @include mix.respond(tab-land--sm) {
+      top: 2.5rem;
+      left: 58%;
+    }
+  }
+  &--3 {
+    bottom: 0;
+    left: 10rem;
+
+    @include mix.respond(tab-land--sm) {
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &:hover {
+    outline: 0.85rem solid vars.$color-primary;
+    transform: scale(1.3) translateY(-0.85rem);
+    box-shadow: 0 2.5rem 4rem rgba(vars.$color-black, 0.5);
+    z-index: 20;
+    outline-offset: 1.85rem;
+
+    @include mix.respond(tab-land--sm) {
+      outline: none;
+      transform: scale(1.1) translateX(0);
+    }
+  }
+
+  &--3:hover {
+    @include mix.respond(tab-land--sm) {
+      outline: none;
+      transform: scale(1.1) translateX(-50%) translateY(-2rem);
+      box-shadow: 0 2.5rem 4rem rgba(vars.$color-black, 0.5);
+    }
+  }
+}

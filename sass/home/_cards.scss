@@ -1,0 +1,22 @@
+@use "../abstracts/variables" as vars;
+@use "../abstracts/mixins" as mix;
+
+.section__cards {
+  margin-top: -15rem;
+  padding: 25rem 8rem 12.5rem 8rem;
+  background-color: vars.$color-grey-light-1;
+}
+
+.cards {
+  max-width: 130rem;
+  margin: -5rem auto 3rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 9.8rem;
+
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    max-width: 114rem;
+    grid-template-columns: 1fr;
+    gap: 8rem;
+  }
+}

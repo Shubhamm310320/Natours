@@ -1,0 +1,46 @@
+@use "./mixins" as mix;
+
+// COLORS
+$color-primary: #55c57a;
+$color-primary-light: #7ed56f;
+$color-primary-dark: #28b485;
+
+$color-secondary-light: #ffb900;
+$color-secondary-dark: #ff7730;
+
+$color-tertiary-light: #2998ff;
+$color-tertiary-dark: #5643fa;
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+
+$color-grey-dark: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+
+$color-white: #fff;
+$color-black: #000;
+
+// FONT
+$default-font-size: 1.6rem;
+
+// NAVIGATION
+$nav-index: 750;
+
+$label-index: 2000;
+$label-size: 7rem;
+$label-top: 5rem;
+$label-right: 5rem;
+$label-top--medium: 3rem;
+$label-right--medium: 3rem;
+$label-top--small: 3rem;
+$label-right--small: 3rem;
+
+$background-index: 500;
+$background-size: 6rem;
+$background-top: 5.5rem;
+$background-right: 5.5rem;
+$background-top--medium: 3.5rem;
+$background-right--medium: 3.5rem;
+$background-top--small: 3.5rem;
+$background-right--small: 3.5rem;

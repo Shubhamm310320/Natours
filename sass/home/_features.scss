@@ -1,0 +1,38 @@
+@use "../abstracts/variables" as vars;
+@use "../abstracts/mixins" as mix;
+
+.section__features {
+  padding: 20rem 0;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(vars.$color-primary-light, 0.8),
+      rgba(vars.$color-primary-dark, 0.8)
+    ),
+    url(../img/nat-4.jpg);
+  background-size: cover;
+  transform: skewY(-4deg);
+  margin-top: -10rem;
+
+  & > * {
+    transform: skewY(4deg);
+  }
+
+  @include mix.respond(tab-land--lg) {
+    padding: 15rem 0;
+  }
+}
+
+.features {
+  max-width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 6.4rem;
+
+  @include mix.respond(tab-land--sm) {
+    padding: 2rem;
+    max-width: 114rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+}

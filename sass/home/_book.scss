@@ -1,0 +1,66 @@
+@use "../abstracts/variables" as vars;
+@use "../abstracts/mixins" as mix;
+
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(
+    to right bottom,
+    vars.$color-primary-light,
+    vars.$color-primary-dark
+  );
+
+  @include mix.respond(tab-land--lg) {
+    padding: 15rem 8rem;
+  }
+}
+
+.book {
+  padding: 0 5rem;
+  max-width: 150rem;
+  margin: 0 auto;
+  background-image: linear-gradient(
+      105deg,
+      rgba(vars.$color-white, 0.9) 0%,
+      rgba(vars.$color-white, 0.9) 50%,
+      transparent 50%
+    ),
+    url(../img/nat-10.jpg);
+  background-size: 100%;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(vars.$color-black, 0.2);
+
+  @include mix.respond(tab-land--lg) {
+    background-image: linear-gradient(
+        105deg,
+        rgba(vars.$color-white, 0.9) 0%,
+        rgba(vars.$color-white, 0.9) 65%,
+        transparent 65%
+      ),
+      url(../img/nat-10.jpg);
+    background-size: cover;
+
+    max-width: 120rem;
+  }
+
+  @include mix.respond(tab-port) {
+    background-image: linear-gradient(
+        to right,
+        rgba(vars.$color-white, 0.9) 0%,
+        rgba(vars.$color-white, 0.9) 100%
+      ),
+      url(../img/nat-10.jpg);
+  }
+
+  &__form {
+    width: 50%;
+    padding: 6rem;
+
+    @include mix.respond(tab-land--lg) {
+      width: 65%;
+    }
+
+    @include mix.respond(tab-port) {
+      width: 100%;
+    }
+  }
+}
